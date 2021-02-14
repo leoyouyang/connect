@@ -1,0 +1,34 @@
+h1 {
+    font-family: "Mansalva";
+    color: #111111;
+}
+
+body {
+    margin-top: 40px;
+    text-align: center;
+    font-family: "Nunito";
+    color: #1d1d1f;
+}
+
+#myButton {
+    background-color: #ebebeb;
+    border: 0;
+    font-family: "Nunito";
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#mySelect {
+    font-family: "Nunito";
+    border: 0;
+    background-color: #ebebeb;
+}
+
+#myText {
+    font-family: "Nunito";
+    border: 0;
+    background-color: #ebebeb;
+    width: 120px;
+}

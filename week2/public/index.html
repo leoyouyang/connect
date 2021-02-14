@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>What I Ate Today</title>
+        <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <h1>What I Ate Today</h1>
+        <form method="POST" action="/formdata">
+            <label for="food">I had </label>
+            <input type="text" name="food" id="myText">
+            <label for="meal"> for </label>
+            <select name="meal" id="mySelect">
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+                <option value="snack">Snack</option>
+            </select><br><br>
+            <input type="submit" name="submit" value="Submit" id="myButton">
+        </form>
+    </body>
+</html>
