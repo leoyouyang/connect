@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>What I Ate Today</title>
+        <link href='https://fonts.googleapis.com/css?family=Mansalva&display=swap' rel='stylesheet'><link href='https://fonts.googleapis.com/css?family=Nunito:600&display=swap' rel='stylesheet'><link rel='stylesheet' type='text/css' href='index.css'></head>
+    </head>
+    <body>
+        <h1>What I Ate Today</h1>
+
+        <%
+            if (data.length > 0) {
+                for (var i = 0; i < data.length; i++) {
+        %>
+                    <div id="dataout<%= i %>"><a href="/displayrecord?_id=<%= data[i]._id %>">I had <%= data[i].food %> for <%= data[i].meal%>.</a></div>
+        <%
+                }
+            }
+        %>
+        <br>
+        <form method="POST" action="/formdata">
+            <label for="food">I had </label>
+            <input type="text" name="food" id="myText">
+            <label for="meal"> for </label>
+            <select name="meal" id="mySelect">
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+                <option value="snack">Snack</option>
+            </select><br><br>
+            <label for="comment">Comment:</label><br>
+            <textarea name="comment" cols="36" rows="5"></textarea><br><br>
+            <input type="submit" name="submit" value="Submit" id="myButton">
+        </form>
+    </body>
+</html>
