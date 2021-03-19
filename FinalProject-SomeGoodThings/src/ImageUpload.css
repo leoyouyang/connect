@@ -1,0 +1,99 @@
+.imageupload {
+    color: #1d1d1f;
+    font-size: 24px;
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.imageupload__caption {
+    outline: none;
+    resize: none;
+    width: 100%;
+    height: 300px;
+    color: #1d1d1f;
+    background-color: white;
+    font-size: 24px;
+    border: 1px solid #147ce5;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.imageupload__progress {
+    width: 100%;
+    height: 12px;
+}
+
+/* For Chrome or Safari */ 
+progress::-webkit-progress-bar { 
+    background-color: white; 
+} 
+
+progress::-webkit-progress-value { 
+    background-color: #147ce5 !important; 
+} 
+
+
+/* For Firefox */ 
+progress { 
+    background-color: white; 
+} 
+
+progress::-moz-progress-bar { 
+    background-color: #147ce5; 
+} 
+
+/* For IE10 */ 
+progress { 
+    background-color: white; 
+} 
+
+progress { 
+    background-color: #147ce5; 
+} 
+
+/* .imageupload__buttonwrap {
+    position: relative;
+} */
+
+/* .imageupload__choosefilebutton {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 32px; 
+    cursor: pointer;
+    border-radius: 30px;
+    border: 1px solid #00ffce;
+    background-color: #0f0f0f;
+    font-size: 20px;
+    color: #00ffce;
+} */
+
+.imageupload__choosefile {
+    /* position: absolute;
+    top: 24px;
+    left: 2px; */
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 750px) {  
+    .imageupload__caption {
+        font-size: 20px;
+    }
+    .imageupload__prompt {
+        font-size: 20px;
+    }
+    .imageupload__choosefilebutton {
+        font-size: 16px;
+    }
+    .imageupload__choosefile {
+        font-size: 16px;
+    }
+  }
