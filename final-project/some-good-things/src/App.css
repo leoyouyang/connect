@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.app {
+  background-color: white;
+}
+
+.app__header {
+  max-width: 1020px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  background-color: white;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 116px;
+  padding-bottom: 116px;
+  object-fit: contain;
+  display: flex;
+  justify-content: space-between;
+}
+
+.app_headerImage {
+  height: 43px;
+  object-fit: contain;
+}
+
+.app__signup {
+  display: flex;
+  flex-direction: column;
+}
+
+.SignUpSubmit {
+  width: 150px;
+}
+
+.app__posts {
+  padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.app__body {
+  color: #1d1d1f;
+  font-size: 24px;
+  max-width: 1020px;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app__loginContainer {
+  line-height: 250%;
+}
+
+.app__footer {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  font-size: 14px;
+  text-align: center;
+  color: #999999;
+}
+
+@media screen and (max-width: 600px) {
+  .app__header {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .app__body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .app__loginContainer {
+    margin-bottom: -20px;
+  }
+}
+
+@media screen and (max-width: 750px) {  
+  .app__body {
+    font-size: 20px;
+  }
+}
